@@ -49,8 +49,9 @@ Follow these steps to set up and run the CrediScan application on your local mac
     
 3.Backend Setup:
     Navigate to the backend directory:
+    
       ```bash
-     cd backend
+      cd backend
     
   Install the required dependencies:
      
@@ -66,14 +67,15 @@ Follow these steps to set up and run the CrediScan application on your local mac
      PORT: Port number for the backend server.
    
 6. Start the backend server:
+
    ```bash
      npm start
 7. Frontend Setup:
-
     Open a new terminal window.
       ```bash
           cd ../frontend
   Navigate to the frontend directory:
+  
       ```bash
       npm install
 
