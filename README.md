@@ -32,7 +32,6 @@ Follow these steps to set up and run the CrediScan application on your local mac
 
 - **Node.js**: Ensure you have Node.js installed. You can download it from [https://nodejs.org/](https://nodejs.org/).
 - **npm**: npm is included with Node.js. Verify its installation by running `npm -v` in your terminal.
-- **MongoDB**: Install MongoDB and ensure it's running. Refer to the [official MongoDB installation guide](https://docs.mongodb.com/manual/installation/) for instructions.
 
 ## Installation Steps
 
