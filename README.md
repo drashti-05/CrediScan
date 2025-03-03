@@ -47,35 +47,32 @@ Follow these steps to set up and run the CrediScan application on your local mac
     ```bash
    cd CrediScan
     
-3.Backend Setup:
-    Navigate to the backend directory:
-    
-      ```bash
-      cd backend
-    
-  Install the required dependencies:
-     
-     ```bash
+3. Backend Setup:
+Navigate to the backend directory:
+   ```bash
+   cd backend
+   Install the required dependencies:
+   ```bash
      npm install
+
 4. Set up environment variables:
 
-    Create a .env file in the backend directory.
+   Create a .env file in the backend directory.
     
-    Add the following variables:
+   Add the following variables:
      DB_CONNECTION_STRING: Connection string for the SQLite database.
      JWT_SECRET: Secret key for JWT authentication.
      PORT: Port number for the backend server.
    
-6. Start the backend server:
-
+5. Start the backend server:
    ```bash
      npm start
-7. Frontend Setup:
+6. Frontend Setup:
     Open a new terminal window.
       ```bash
           cd ../frontend
-  Navigate to the frontend directory:
   
+7. Navigate to the frontend directory:
       ```bash
       npm install
 
