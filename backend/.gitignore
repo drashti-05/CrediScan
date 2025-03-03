@@ -1,0 +1,21 @@
+# Node
+node_modules/
+backend/node_modules/
+
+# Environment
+backend/.env
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+.env
+uploads/*
+!uploads/.gitkeep
+*.sqlite 

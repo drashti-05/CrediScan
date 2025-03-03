@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Document Upload System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="dashboard-header">
+            <nav class="dashboard-nav">
+                <div class="brand">
+                    <i class="fas fa-file-search brand-icon"></i>
+                    <h1>Document Upload System</h1>
+                </div>
+                <div class="user-controls">
+                    <a href="profile.html" class="btn btn-secondary">
+                        <i class="fas fa-user-circle"></i> Profile
+                    </a>
+                    <button type="button" class="btn btn-secondary" onclick="Auth.logout();">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main class="dashboard-content">
+            <div class="dashboard-card scanner-card">
+                <div class="card-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-upload"></i>
+                        Document Upload
+                    </h2>
+                </div>
+                <div class="scanner-description">
+                    <div class="info-box">
+                        <i class="fas fa-info-circle"></i>
+                        <div>
+                            <p>Upload your document to process.</p>
+                            <p>Visit your profile to check credits and upload history.</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="upload-form" onsubmit="event.preventDefault();">
+                    <div class="upload-area" id="upload-area">
+                        <div class="upload-content">
+                            <div class="upload-icon">
+                                <i class="fas fa-file-upload"></i>
+                            </div>
+                            <div class="upload-text">
+                                <p>Drag & drop your document here or click to browse</p>
+                                <small>Only .txt files are supported</small>
+                            </div>
+                        </div>
+                        <input type="file" id="file-input" hidden accept=".txt">
+                    </div>
+                    <div id="upload-status"></div>
+                </form>
+            </div>
+
+            <div id="scan-results" class="dashboard-card" style="display: none; margin-top: 20px;">
+                <div class="card-header">
+                    <h3 class="section-title">
+                        <i class="fas fa-search"></i>
+                        Scan Results
+                    </h3>
+                </div>
+                <div id="results-content"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html> 

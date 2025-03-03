@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Cathago Document Scanning System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="dashboard-header">
+            <nav class="dashboard-nav">
+                <div class="brand">
+                    <a href="dashboard.html" class="brand-link">
+                        <h1>Cathago Document Scanning System</h1>
+                    </a>
+                </div>
+                <div class="user-controls">
+                    <button onclick="Auth.logout()" class="btn btn-secondary">Logout</button>
+                </div>
+            </nav>
+        </header>
+
+        <main class="profile-content">
+            <div class="profile-header">
+                <h2>User Profile</h2>
+                <div class="user-info">
+                    <span id="username">Loading...</span>
+                    <span class="credit-badge">Credits: <span id="credit-count">-</span></span>
+                </div>
+            </div>
+
+            <div class="profile-tabs">
+                <button class="tab-btn active" data-tab="credits">Credits</button>
+                <button class="tab-btn" data-tab="history">Scan History</button>
+                <button class="tab-btn" data-tab="requests">Credit Requests</button>
+            </div>
+
+            <div class="tab-content">
+                <!-- Credits Tab -->
+                <div class="tab-pane active" id="credits-tab">
+                    <div class="dashboard-card">
+                        <div class="credit-info">
+                            <div class="credit-balance">
+                                <h4>Current Balance</h4>
+                                <span id="profile-credits">-</span>
+                                <small>available credits</small>
+                            </div>
+                            <div class="credit-request-form">
+                                <h4>
+                                    <i class="fas fa-plus-circle"></i>
+                                    Request More Credits
+                                </h4>
+                                <form id="credit-request-form">
+                                    <div class="form-group">
+                                        <label for="credits">
+                                            <i class="fas fa-coins"></i>
+                                            Number of Credits Needed
+                                        </label>
+                                        <input 
+                                            type="number" 
+                                            id="credits" 
+                                            name="credits" 
+                                            min="1" 
+                                            placeholder="Enter amount"
+                                            required
+                                        >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="reason">
+                                            <i class="fas fa-comment-alt"></i>
+                                            Reason for Request
+                                        </label>
+                                        <textarea 
+                                            id="reason" 
+                                            name="reason" 
+                                            placeholder="Please explain why you need additional credits..."
+                                            required
+                                        ></textarea>
+                                    </div>
+                                    <button type="submit" class="btn-submit">
+                                        <i class="fas fa-paper-plane"></i>
+                                        Submit Request
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- History Tab -->
+                <div class="tab-pane" id="history-tab">
+                    <div class="dashboard-card">
+                        <h3>Scan History</h3>
+                        <div class="history-container">
+                            <ul class="scan-history" id="scan-history">
+                                <li>Loading scan history...</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Requests Tab -->
+                <div class="tab-pane" id="requests-tab">
+                    <div class="dashboard-card">
+                        <h3>Credit Request Status</h3>
+                        <div class="requests-status-container" id="credit-requests-status">
+                            Loading requests...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html> 
