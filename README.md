@@ -1,30 +1,26 @@
-# CrediScan
+CrediScan
+CrediScan is a web application designed to manage and track financial transactions, focusing on user authentication, a credit-based document scanning system, and smart analytics. Users can upload documents for similarity analysis, monitor their scanning credits, and access detailed analytics.
 
-CrediScan is a web application designed to manage and track your financial transactions, including credits, debits, creditors, and debtors. With a modern UI/UX and advanced features, it provides a seamless experience for managing your financial records.
+Features
+User Management & Authentication:
 
-## Features
+User registration and login with basic username/password authentication.
+Role-based access control with Regular Users and Admins.
+Profile section displaying user credits, past scans, and credit requests.
+Credit System:
 
-- **Credit Tracker**: Efficiently track and manage all your credit transactions.
-- **Debit Tracker**: Keep track of all your debit transactions with ease.
-- **Notifications**: Receive real-time notifications with smooth animations and responsive design.
-- **Creditors Management**:
-  - *Add Creditors*: Easily add new creditors.
-  - *View Creditors*: Manage existing creditors and view detailed information.
-- **Debtors Management**:
-  - *Add Debtors*: Add new debtors effortlessly.
-  - *View Debtors*: Manage existing debtors and access detailed information.
-- **Reports**: Generate and view comprehensive reports, available for download or in graphical formats.
-- **User Authentication**: Secure and user-friendly login and registration system.
-- **Modern UI/UX**: Clean, modern, and responsive design with advanced animations.
+Each user receives 20 free scans per day, automatically resetting at midnight.
+Users can request additional credits upon exceeding their daily limit.
+Admins have the authority to approve or deny credit requests.
+Each document scan deducts 1 credit from the user's balance.
+Document Scanning & Matching:
 
-## Installation
+Users can upload plain text files for scanning.
+The system compares uploaded documents against stored ones using basic text similarity algorithms.
+Returns similar documents based on the analysis.
+Smart Analytics Dashboard:
 
-1. **Clone the repository**:
-
-   ```bash
-   git clone https://github.com/drashti-05/CrediScan.git
-2. Navigate to the project directory:
- ```bash
-    cd CrediScan
-3.
-
+Tracks the number of scans per user per day.
+Identifies the most commonly scanned document topics.
+Displays top users by scans and credit usage.
+Generates credit usage statistics for admins.
