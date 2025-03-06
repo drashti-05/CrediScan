@@ -1,4 +1,4 @@
-CrediScan is a web application designed to manage and track financial transactions, focusing on user authentication, a credit-based document scanning system, and smart analytics. Users can upload documents for similarity analysis, monitor their scanning credits, and access detailed analytics.
+CrediScan is a web application designed focusing on user authentication, a credit-based document scanning system, and smart analytics. Users can upload documents for similarity analysis, monitor their scanning credits, and access detailed analytics.
 
 Features
 User Management & Authentication:
